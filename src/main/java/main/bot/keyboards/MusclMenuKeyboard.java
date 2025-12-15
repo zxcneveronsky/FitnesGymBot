@@ -30,9 +30,9 @@ public class MusclMenuKeyboard {
         KeyboardRow row5 = new KeyboardRow();
         row5.add(new KeyboardButton("ОБНОВИТЬ МЕНЮ"));
 
-        row.add(row3);
         row.add(row1);
         row.add(row2);
+        row.add(row3);
         row.add(row4);
         row.add(row5);
 

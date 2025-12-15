@@ -218,6 +218,23 @@ public class ExerciseData {
         return result;
     }
 
+    public Exercise findExerciseForName(String name){
+        for (Exercise exercise : allExercise){
+            if(exercise.getName().equalsIgnoreCase(name)) {
+                return exercise;
+            }
+        }
+        return null;
+    }
+    public String findMusclForExercise(String name){
+        Exercise exercise = findExerciseForName(name);
+        if (exercise != null){
+            return exercise.getMuscle();
+        } else {
+            return null;
+        }
+    }
+
 
 
 
